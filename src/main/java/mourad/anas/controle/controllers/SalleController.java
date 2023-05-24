@@ -35,7 +35,7 @@ public class SalleController {
                 .orElseThrow(() -> new ResourceNotFoundException("L'étudiant " + salle.getNumero() + " n'existe pas!"));
 
         updateSalle.setLibelle(salle.getLibelle());
-        updateSalle.setCours(salle.getCours());
+        updateSalle.setCours(salle.getCours()); 
 
         salleRepository.save(updateSalle);
 
